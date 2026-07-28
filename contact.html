@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Mazay Interiors — Get a free consultation for your luxury interior design project in Morocco. Visit our Casablanca studio." />
+  <title>Contact — Mazay Interiors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-logo">MAZAY <span>INTERIORS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active nav-cta">Get Consultation</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-media-placeholder" style="position:absolute;inset:0;">
+      <div class="placeholder-icon">📍</div>
+      <span>Add Contact Hero Image Here</span>
+      <small>assets/images/contact-hero.jpg</small>
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label">Get In Touch</p>
+      <h1 class="page-hero-title">Let's Create <em>Together</em></h1>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="padding-top:4rem;">
+    <div class="contact-inner">
+      <div class="contact-info reveal-left">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="section-title">Start Your <em>Dream</em><br>Project Today</h2>
+        <span class="gold-line left"></span>
+        <p class="contact-intro">
+          Ready to transform your space? Our team is available for consultations across Morocco. We'd love to hear about your vision.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Studio Address</div>
+              <div class="contact-detail-value">123 Rue Mohammed V, Casablanca, Morocco</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value">+212 6 00 00 00 00</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">hello@mazayinteriors.ma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right"
+           data-api-endpoint="/api/contact.php"
+           role="region" aria-label="Contact form">
+        <div class="form-header">
+          <h3 class="form-title">Send Us a Message</h3>
+          <p class="form-subtitle">We respond within 24 hours</p>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name *</label>
+              <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Layla" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name *</label>
+              <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Benali" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+212 6 00 00 00 00" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="service">Service Interested In</label>
+            <select class="form-select" id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="interior-design">Interior Design</option>
+              <option value="moroccan-salon">Moroccan Salon</option>
+              <option value="kitchen">Modern Kitchen</option>
+              <option value="3d-viz">3D Visualization</option>
+              <option value="lighting">Luxury Lighting</option>
+              <option value="renovation">Full Renovation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Your Message *</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn" style="width:100%;justify-content:center;">
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+          <p class="footer-tagline">Transforming spaces into timeless experiences.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">In</a>
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Pi</a>
+            <a href="#" class="social-link">Yt</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Interior Design</a></li>
+            <li><a href="services.html">Moroccan Salons</a></li>
+            <li><a href="services.html">3D Visualization</a></li>
+            <li><a href="services.html">Renovations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@mazayinteriors.ma">hello@mazayinteriors.ma</a></li>
+            <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>Mazay Interiors</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

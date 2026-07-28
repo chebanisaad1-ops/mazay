@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mazay Interiors Services — Interior Design, Moroccan Salons, 3D Visualization, Luxury Lighting, Full Renovations." />
+  <title>Services — Mazay Interiors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-logo">MAZAY <span>INTERIORS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="nav-cta">Get Consultation</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <img src="images/Service%20background/service%20photo.png" alt="" class="hero-video" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label">What We Offer</p>
+      <h1 class="page-hero-title">Our <em>Services</em></h1>
+    </div>
+  </section>
+
+  <!-- Services Detail Sections -->
+  <div class="services-extended">
+    <!-- Service 1 — Restaurant Interior Design -->
+    <div id="restaurant" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🍽️</div>
+          <span>Add Restaurant Image</span>
+          <small>Restaurant Interior Design</small>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">01 — Restaurant Interior Design</span>
+        <h2 class="section-title">Dining <em>Spaces</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          We craft dining environments that tell a story. From intimate bistros to grand culinary destinations, every restaurant we design balances aesthetics, functionality, and brand identity to create unforgettable guest experiences.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Spatial layout & guest flow optimization
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Ambiance, lighting & acoustic design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Custom furniture & millwork
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Brand identity & concept development
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Service 2 — Riad Interior Design -->
+    <div id="riad" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <span class="section-label">02 — Riad Interior Design</span>
+        <h2 class="section-title">Heritage <em>Riads</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Our riad designs honor Morocco's rich architectural heritage while embracing contemporary luxury. We restore and reimagine traditional spaces with handcrafted materials, artisanal details, and a deep respect for authenticity.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Traditional zellige & tadelakt finishes
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Artisan plaster & wood carving
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Courtyard & fountain design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Custom mosaic & carved ceilings
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+      <div class="reveal-right">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🕌</div>
+          <span>Add Riad Image</span>
+          <small>Riad Interior Design</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3 — Terrace Design -->
+    <div id="terrace" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🌿</div>
+          <span>Add Terrace Image</span>
+          <small>Terrace Design</small>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">03 — Terrace Design</span>
+        <h2 class="section-title">Outdoor <em>Elegance</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Transform your outdoor spaces into luxurious extensions of your interior. We design terraces that blend natural elements with refined aesthetics, creating alfresco retreats for dining, relaxation, and entertainment.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Outdoor furniture & lounge design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Shading, lighting & ambiance
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Landscaping & green integration
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Custom flooring & water features
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Service 4 — Café Interior Design -->
+    <div id="cafe" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <span class="section-label">04 — Café Interior Design</span>
+        <h2 class="section-title">Cozy <em>Cafés</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          We create warm, inviting café interiors that reflect your brand's character. From cozy neighborhood spots to chic urban coffee bars, each design balances comfort, flow, and visual appeal.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Layout & service flow optimization
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Custom seating & counter design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Lighting & atmosphere design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Brand storytelling through interiors
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+      <div class="reveal-right">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">☕</div>
+          <span>Add Café Image</span>
+          <small>Café Interior Design</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 5 — Hotel Interior Design -->
+    <div id="hotel" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🏨</div>
+          <span>Add Hotel Image</span>
+          <small>Hotel Interior Design</small>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">05 — Hotel Interior Design</span>
+        <h2 class="section-title">Luxury <em>Hospitality</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Our hotel designs deliver unforgettable guest journeys. We orchestrate every touchpoint — from grand lobbies to intimate suites — crafting immersive environments that embody your brand's unique identity.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Lobby & public space design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Guest room & suite interiors
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Restaurant & bar concept design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Branded guest experience strategy
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Service 6 — Villa Interior Design -->
+    <div id="villa" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <span class="section-label">06 — Villa Interior Design</span>
+        <h2 class="section-title">Residential <em>Masterpieces</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          We design residential masterpieces tailored to your lifestyle. Every villa project receives meticulous attention to spatial flow, material selection, and the seamless integration of indoor and outdoor living.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Full-home interior architecture
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Custom millwork & built-ins
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Material & finish curation
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Indoor-outdoor living integration
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+      <div class="reveal-right">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🏡</div>
+          <span>Add Villa Image</span>
+          <small>Villa Interior Design</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 7 — Luxury Space Planning -->
+    <div id="space-planning" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">📐</div>
+          <span>Add Space Planning Image</span>
+          <small>Luxury Space Planning</small>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">07 — Luxury Space Planning</span>
+        <h2 class="section-title">Thoughtful <em>Layouts</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Optimized layouts are the foundation of great design. We analyze every square meter to create intuitive, elegant floor plans that maximize functionality, natural light, and visual harmony.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Spatial analysis & zoning
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Ergonomic circulation design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Natural light optimization
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Multi-functional space solutions
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Service 8 — Custom Interior Renovation -->
+    <div id="renovation" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <span class="section-label">08 — Custom Interior Renovation</span>
+        <h2 class="section-title">Complete <em>Transformations</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          We manage complete interior transformations with precision. Every renovation is orchestrated from concept to completion — coordinating contractors, permits, timelines, and quality control for a seamless experience.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Full demolition & reconstruction
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> MEP & structural coordination
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Project management & timelines
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Quality control & handover
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+      <div class="reveal-right">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🔨</div>
+          <span>Add Renovation Image</span>
+          <small>Custom Interior Renovation</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 9 — Premium Furniture & Decoration -->
+    <div id="furniture" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🛋️</div>
+          <span>Add Furniture Image</span>
+          <small>Premium Furniture & Decoration</small>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">09 — Premium Furniture & Decoration</span>
+        <h2 class="section-title">Curated <em>Interiors</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Our curated furniture and decoration service sources the finest pieces from around the world. We select every item — from custom sofas to artisanal accessories — to create cohesive, personalized interiors.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Custom & bespoke furniture design
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Art & accessory curation
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Textile, rug & drapery selection
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Global sourcing & procurement
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Service 10 — Lighting Design -->
+    <div id="lighting" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <span class="section-label">10 — Lighting Design</span>
+        <h2 class="section-title">Light as <em>Architecture</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          We treat lighting as an architectural element — shaping moods, defining zones, creating drama. From concealed LED coves to statement chandeliers, every lumen is intentional.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Architectural & accent lighting
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Statement chandeliers & pendants
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Smart lighting automation
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Concealed LED & cove lighting
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+      <div class="reveal-right">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">💡</div>
+          <span>Add Lighting Image</span>
+          <small>Lighting Design</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 11 — 3D Visualization & Rendering -->
+    <div id="viz3d" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;border-bottom:var(--border-gold);">
+      <div class="reveal-left">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🖥️</div>
+          <span>Add 3D Visualization Image</span>
+          <small>3D Visualization & Rendering</small>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">11 — 3D Visualization & Rendering</span>
+        <h2 class="section-title">See It <em>Before</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Photorealistic 3D renders and immersive virtual walkthroughs. Experience your space before construction begins — eliminate guesswork, approve with confidence.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Photorealistic interior renders
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> 360° virtual walkthroughs
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Material & finish visualization
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Lighting & ambiance simulation
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Service 12 — Turnkey Interior Design Solutions -->
+    <div id="turnkey" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;padding:4rem 0;">
+      <div class="reveal-left">
+        <span class="section-label">12 — Turnkey Interior Design Solutions</span>
+        <h2 class="section-title">End-to-End <em>Excellence</em></h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p style="font-size:0.82rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin-bottom:1.5rem;">
+          Our comprehensive turnkey service manages every aspect of your project. From initial concept through final installation, we deliver move-in-ready spaces that exceed expectations — hassle-free.
+        </p>
+        <ul style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2rem;">
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Concept-to-completion management
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Budget & procurement oversight
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Contractor & vendor coordination
+          </li>
+          <li style="display:flex;align-items:center;gap:0.8rem;font-size:0.75rem;color:var(--gray-300);letter-spacing:0.05em;">
+            <span style="color:var(--gold);">◆</span> Final styling & move-in ready delivery
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><span>Request a Quote</span><span>→</span></a>
+      </div>
+      <div class="reveal-right">
+        <div class="img-placeholder" style="aspect-ratio:4/3;border-radius:var(--radius);">
+          <div class="ph-icon">🔑</div>
+          <span>Add Turnkey Solution Image</span>
+          <small>Turnkey Interior Design Solutions</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="process-inner">
+      <div class="process-header reveal">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">Our <em>Process</em></h2>
+        <span class="gold-line"></span>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal delay-1">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Consultation</h3>
+          <p class="step-desc">We meet to understand your vision, lifestyle, budget, and timeline.</p>
+        </div>
+        <div class="process-step reveal delay-2">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Concept</h3>
+          <p class="step-desc">We develop mood boards, space plans, and 3D concepts for your approval.</p>
+        </div>
+        <div class="process-step reveal delay-3">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Design</h3>
+          <p class="step-desc">Full design documentation — every material, fixture, and finish specified.</p>
+        </div>
+        <div class="process-step reveal delay-4">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Execution</h3>
+          <p class="step-desc">We manage all contractors, deliveries, and installations on your behalf.</p>
+        </div>
+        <div class="process-step reveal delay-5">
+          <div class="step-number">05</div>
+          <h3 class="step-title">Handover</h3>
+          <p class="step-desc">Final styling, photography, and the keys to your transformed space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+          <p class="footer-tagline">Transforming spaces into timeless experiences.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">In</a>
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Pi</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#restaurant">Restaurant Design</a></li>
+            <li><a href="#riad">Riad Design</a></li>
+            <li><a href="#terrace">Terrace Design</a></li>
+            <li><a href="#cafe">Café Design</a></li>
+            <li><a href="#hotel">Hotel Design</a></li>
+            <li><a href="#villa">Villa Design</a></li>
+            <li><a href="#turnkey">Turnkey Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@mazayinteriors.ma">hello@mazayinteriors.ma</a></li>
+            <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>Mazay Interiors</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

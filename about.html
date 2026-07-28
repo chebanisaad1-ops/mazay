@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Mazay Interiors — Our story, team, and values. Premium interior design studio in Morocco." />
+  <title>About — Mazay Interiors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-logo">MAZAY <span>INTERIORS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="nav-cta">Get Consultation</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <img src="images/About%20background/about%20photo.png" alt="" class="hero-video" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label">Our Story</p>
+      <h1 class="page-hero-title">Passion for <em>Spaces</em></h1>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="about-story-section" style="padding:8rem 4rem;max-width:1400px;margin:0 auto;">
+    <div class="about-story-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;">
+      <div class="reveal-left">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">Born From a <em>Love</em><br>of Beautiful Spaces</h2>
+        <span class="gold-line left" style="margin:1.5rem 0;"></span>
+        <p class="about-desc">Founded in 2018 in Casablanca, Mazay Interiors was born from a simple belief: every person deserves to live in a space that reflects their finest self.</p>
+        <p class="about-desc">Our founders — architects trained in Europe with deep roots in Moroccan craftsmanship — set out to bridge the gap between global luxury design trends and the rich heritage of North African aesthetics.</p>
+        <p class="about-desc">Today, with over 340 completed projects across Morocco, we are the trusted partner for families, developers, and hospitality brands seeking truly extraordinary interiors.</p>
+      </div>
+      <div class="reveal-right" style="position:relative;">
+        <div class="img-placeholder about-image" style="aspect-ratio:4/5;">
+          <div class="ph-icon">🏡</div>
+          <span>Add Story Image Here</span>
+          <small>assets/images/story-main.jpg</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values-section">
+    <div class="values-inner">
+      <div class="reveal" style="text-align:center;margin-bottom:1rem;">
+        <span class="section-label">What Drives Us</span>
+        <h2 class="section-title">Our Core <em>Values</em></h2>
+        <span class="gold-line"></span>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal delay-1">
+          <div class="value-number">01</div>
+          <h3 class="value-title">Craftsmanship First</h3>
+          <p class="value-desc">We believe in quality that endures. Every material we specify, every artisan we partner with is held to the highest standard of excellence.</p>
+        </div>
+        <div class="value-card reveal delay-2">
+          <div class="value-number">02</div>
+          <h3 class="value-title">Heritage & Modernity</h3>
+          <p class="value-desc">We honor Morocco's extraordinary craft traditions while embracing contemporary design language — creating spaces that are both timeless and current.</p>
+        </div>
+        <div class="value-card reveal delay-3">
+          <div class="value-number">03</div>
+          <h3 class="value-title">Client Partnership</h3>
+          <p class="value-desc">Your vision is our north star. We listen deeply, collaborate openly, and deliver transparently — every decision made together.</p>
+        </div>
+        <div class="value-card reveal delay-4">
+          <div class="value-number">04</div>
+          <h3 class="value-title">Sustainable Luxury</h3>
+          <p class="value-desc">True luxury respects its environment. We source responsibly, design efficiently, and build for the long term.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="team-inner">
+      <div class="team-header reveal">
+        <span class="section-label">The People</span>
+        <h2 class="section-title">Meet Our <em>Team</em></h2>
+        <span class="gold-line left"></span>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal delay-1">
+          <div class="img-placeholder team-photo">
+            <div class="ph-icon">👤</div>
+            <span>Add Team Photo</span>
+            <small>assets/images/team-1.jpg</small>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Youssef Mazay</h3>
+            <p class="team-role">Founder & Creative Director</p>
+          </div>
+        </div>
+        <div class="team-card reveal delay-2">
+          <div class="img-placeholder team-photo">
+            <div class="ph-icon">👤</div>
+            <span>Add Team Photo</span>
+            <small>assets/images/team-2.jpg</small>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Nadia El Amrani</h3>
+            <p class="team-role">Lead Interior Designer</p>
+          </div>
+        </div>
+        <div class="team-card reveal delay-3">
+          <div class="img-placeholder team-photo">
+            <div class="ph-icon">👤</div>
+            <span>Add Team Photo</span>
+            <small>assets/images/team-3.jpg</small>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Omar Benjelloun</h3>
+            <p class="team-role">3D Visualization Specialist</p>
+          </div>
+        </div>
+        <div class="team-card reveal delay-4">
+          <div class="img-placeholder team-photo">
+            <div class="ph-icon">👤</div>
+            <span>Add Team Photo</span>
+            <small>assets/images/team-4.jpg</small>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Sara Tazi</h3>
+            <p class="team-role">Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <section style="padding:5rem 4rem;background:var(--gold);">
+    <div class="stats-grid" style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;">
+      <div>
+        <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;"><span data-count="340">0</span>+</div>
+        <div style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(15,15,15,0.6);margin-top:0.5rem;">Projects</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;"><span data-count="12">0</span></div>
+        <div style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(15,15,15,0.6);margin-top:0.5rem;">Years Experience</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;"><span data-count="18">0</span></div>
+        <div style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(15,15,15,0.6);margin-top:0.5rem;">Team Members</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;"><span data-count="7">0</span></div>
+        <div style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(15,15,15,0.6);margin-top:0.5rem;">Cities Served</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+          <p class="footer-tagline">Transforming spaces into timeless experiences.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">In</a>
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Pi</a>
+            <a href="#" class="social-link">Yt</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Interior Design</a></li>
+            <li><a href="services.html">Moroccan Salons</a></li>
+            <li><a href="services.html">3D Visualization</a></li>
+            <li><a href="services.html">Renovations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@mazayinteriors.ma">hello@mazayinteriors.ma</a></li>
+            <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>Mazay Interiors</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mazay Interiors — Premium luxury interior design and architecture agency in Morocco. Modern kitchens, Moroccan salons, 3D visualization." />
+  <meta name="keywords" content="interior design, luxury, Morocco, Mazay, architecture, 3D visualization" />
+  <meta property="og:title" content="Mazay Interiors — Luxury Interior Design" />
+  <meta property="og:description" content="Transforming spaces into timeless experiences." />
+  <title>Mazay Interiors — Luxury Interior Design</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-logo">MAZAY <span>INTERIORS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="nav-cta">Get Consultation</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ═══ HERO SECTION ══════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/Background/Create_an_ultra_realistic_cine.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floating particles -->
+    <div class="particles-container" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title" aria-label="Crafting Spaces, Defining Luxury">
+        <span class="line">Crafting</span>
+        <span class="line italic">Spaces,</span>
+        <span class="line">Defining <em>Luxury.</em></span>
+      </h1>
+      <p class="hero-desc">
+        We transform ordinary spaces into extraordinary experiences — where Moroccan heritage meets contemporary elegance.
+      </p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn-primary"><span>Explore Our Work</span> <span>→</span></a>
+        <a href="contact.html" class="btn-outline">Free Consultation</a>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats" aria-label="Key statistics">
+      <div class="hero-stat">
+        <div class="number"><span data-count="340">0</span>+</div>
+        <div class="label">Projects Completed</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number"><span data-count="12">0</span></div>
+        <div class="label">Years Experience</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number"><span data-count="98">0</span>%</div>
+        <div class="label">Client Satisfaction</div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ════════════════════════════════════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="dot"></span> Interior Design</span>
+      <span class="marquee-item"><span class="dot"></span> Architecture</span>
+      <span class="marquee-item"><span class="dot"></span> 3D Visualization</span>
+      <span class="marquee-item"><span class="dot"></span> Moroccan Salons</span>
+      <span class="marquee-item"><span class="dot"></span> Luxury Kitchens</span>
+      <span class="marquee-item"><span class="dot"></span> Space Planning</span>
+      <span class="marquee-item"><span class="dot"></span> Renovation</span>
+      <span class="marquee-item"><span class="dot"></span> Lighting Design</span>
+      <span class="marquee-item"><span class="dot"></span> Interior Design</span>
+      <span class="marquee-item"><span class="dot"></span> Architecture</span>
+      <span class="marquee-item"><span class="dot"></span> 3D Visualization</span>
+      <span class="marquee-item"><span class="dot"></span> Moroccan Salons</span>
+      <span class="marquee-item"><span class="dot"></span> Luxury Kitchens</span>
+      <span class="marquee-item"><span class="dot"></span> Space Planning</span>
+      <span class="marquee-item"><span class="dot"></span> Renovation</span>
+      <span class="marquee-item"><span class="dot"></span> Lighting Design</span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT INTRO ════════════════════════════════ -->
+  <section id="about-intro" aria-label="About Mazay Interiors">
+    <div class="about-text reveal-left">
+      <span class="section-label">Who We Are</span>
+      <h2 class="section-title">Where <em>Vision</em><br>Meets Craft</h2>
+      <span class="gold-line left"></span>
+      <p class="about-desc">
+        Mazay Interiors is a premium design studio specializing in the art of transforming living spaces. With a deep appreciation for Moroccan craftsmanship and a passion for modern minimalism, we create environments that tell your story.
+      </p>
+      <p class="about-desc">
+        From concept to completion, our team of expert designers and architects bring unparalleled attention to detail — ensuring every corner, every material, every light source speaks to elegance.
+      </p>
+      <a href="about.html" class="btn-outline">Discover Our Story →</a>
+    </div>
+
+    <div class="about-images reveal-right" style="position: relative;">
+      <!-- Main image placeholder -->
+      <div class="img-placeholder about-image">
+        <div class="ph-icon">🏛️</div>
+        <span>Add Project Image Here</span>
+        <small>assets/images/about-main.jpg</small>
+      </div>
+      <!-- Accent image placeholder -->
+      <div class="img-placeholder about-image-small">
+        <div class="ph-icon">✨</div>
+        <span>Add Detail Image Here</span>
+        <small>assets/images/about-detail.jpg</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES SECTION ═══════════════════════════ -->
+  <section id="services" aria-label="Our Services">
+    <div class="services-header">
+      <div>
+        <span class="section-label reveal">What We Do</span>
+        <h2 class="section-title reveal delay-1">Our <em>Expertise</em></h2>
+      </div>
+      <a href="services.html" class="btn-outline reveal delay-2">View All Services →</a>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <article class="service-card" data-service="interior-design">
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="service-title">Interior Design</h3>
+        <p class="service-desc">Full-service interior design transforming your space into a personalized sanctuary with curated furnishings, color palettes, and bespoke finishes.</p>
+        <a href="services.html#interior" class="service-link">Explore Service <span>→</span></a>
+      </article>
+
+      <!-- Service 2 -->
+      <article class="service-card" data-service="moroccan-salon">
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 class="service-title">Moroccan Salons</h3>
+        <p class="service-desc">Authentic Moroccan salon design blending traditional zellige, carved plaster, and rich textiles with contemporary proportions and comfort.</p>
+        <a href="services.html#moroccan" class="service-link">Explore Service <span>→</span></a>
+      </article>
+
+      <!-- Service 3 -->
+      <article class="service-card" data-service="kitchen">
+        <div class="service-number">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </div>
+        <h3 class="service-title">Modern Kitchens</h3>
+        <p class="service-desc">Precision-engineered kitchens where form meets function — German cabinetry, smart storage solutions, and statement islands for the discerning homeowner.</p>
+        <a href="services.html#kitchen" class="service-link">Explore Service <span>→</span></a>
+      </article>
+
+      <!-- Service 4 -->
+      <article class="service-card" data-service="3d-viz">
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="service-title">3D Visualization</h3>
+        <p class="service-desc">Photo-realistic 3D renders and virtual walkthroughs allowing you to experience your space before a single wall is touched or tile is laid.</p>
+        <a href="services.html#viz3d" class="service-link">Explore Service <span>→</span></a>
+      </article>
+
+      <!-- Service 5 -->
+      <article class="service-card" data-service="lighting">
+        <div class="service-number">05</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </div>
+        <h3 class="service-title">Luxury Lighting</h3>
+        <p class="service-desc">Bespoke lighting design that sculpts atmosphere — from architectural coves to statement chandeliers sourced from Europe's finest ateliers.</p>
+        <a href="services.html#lighting" class="service-link">Explore Service <span>→</span></a>
+      </article>
+
+      <!-- Service 6 -->
+      <article class="service-card" data-service="renovation">
+        <div class="service-number">06</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="service-title">Full Renovations</h3>
+        <p class="service-desc">End-to-end renovation management — from demolition to final styling. We handle every contractor, every permit, every detail so you don't have to.</p>
+        <a href="services.html#renovation" class="service-link">Explore Service <span>→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ PORTFOLIO SECTION ════════════════════════ -->
+  <section id="portfolio" aria-label="Our Portfolio">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-label reveal">Our Work</span>
+        <h2 class="section-title reveal delay-1">Selected <em>Projects</em></h2>
+      </div>
+      <!-- Filter Buttons — data-filter maps to data-category on portfolio items -->
+      <div class="portfolio-filters" role="tablist" aria-label="Portfolio categories">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="restaurant" role="tab">Restaurants</button>
+        <button class="filter-btn" data-filter="riad" role="tab">Riads</button>
+        <button class="filter-btn" data-filter="terrace" role="tab">Terraces</button>
+        <button class="filter-btn" data-filter="villa" role="tab">Villas</button>
+        <button class="filter-btn" data-filter="cafe" role="tab">Cafés</button>
+        <button class="filter-btn" data-filter="hotel" role="tab">Hotels</button>
+      </div>
+    </div>
+
+    <!-- 
+      PORTFOLIO GRID
+      To add images: replace .img-placeholder with <img src="assets/images/..." alt="...">
+      data-category must match filter-btn data-filter values
+    -->
+    <div class="portfolio-grid">
+      <div class="portfolio-item" data-category="restaurant" data-project-id="1">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37.jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="2">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37%20(1).jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="3">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235720%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="4">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235727%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="5">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235735%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="6">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235742.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="7">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235400.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="8">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235450.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="9">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37%20(2).jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="10">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37%20(3).jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="11">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.38.jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="12">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235756%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="13">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235803%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="14">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235503.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="15">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235517.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="16">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235527.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="17">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235847%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="18">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235945%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="19">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235534.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="20">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235542.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="21">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235955%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="22">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-28%20000002%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5" style="max-width:1400px;margin:3rem auto 0;">
+      <a href="portfolio.html" class="btn-outline">View Full Portfolio →</a>
+    </div>
+  </section>
+
+  <!-- ═══ BEFORE / AFTER ══════════════════════════ -->
+  <section id="before-after" aria-label="Before and After transformations">
+    <div class="before-after-inner">
+      <div class="before-after-header reveal">
+        <span class="section-label">Transformations</span>
+        <h2 class="section-title">Before <em>&</em> After</h2>
+        <span class="gold-line"></span>
+        <p style="font-size:0.8rem;color:var(--gray-500);letter-spacing:0.1em;margin-top:1rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:2;">
+          Drag the handle to reveal the transformation — from raw space to curated luxury.
+        </p>
+      </div>
+
+      <div class="before-after-slider" aria-label="Before and after comparison slider">
+        <!-- BEFORE -->
+        <div class="ba-before">
+          <div class="img-placeholder" style="width:100%;height:100%;">
+            <div class="ph-icon">🏗️</div>
+            <span>Before — Add Image Here</span>
+            <small>assets/images/before-salon.jpg</small>
+          </div>
+          <span class="ba-label">Before</span>
+        </div>
+
+        <!-- AFTER -->
+        <div class="ba-after">
+          <div class="img-placeholder" style="width:100%;height:100%;background:var(--black-card);">
+            <div class="ph-icon">✨</div>
+            <span>After — Add Image Here</span>
+            <small>assets/images/after-salon.jpg</small>
+          </div>
+          <span class="ba-label">After</span>
+        </div>
+
+        <!-- Handle -->
+        <div class="ba-handle" aria-hidden="true">
+          <div class="ba-handle-circle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f0f0f" stroke-width="2.5" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+              <path d="M9 18l6-6-6-6" transform="translate(6,0)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 3D VISUALIZATION ════════════════════════ -->
+  <section id="viz3d" aria-label="3D Visualization Services">
+    <div class="particles-container" aria-hidden="true"></div>
+    <div class="viz3d-inner">
+      <div class="viz3d-media reveal-left">
+        <div class="img-placeholder" style="width:100%;height:100%;aspect-ratio:4/3;border-radius:12px;">
+          <div class="ph-icon">🖥️</div>
+          <span>Add 3D Render Image Here</span>
+          <small>assets/images/3d-showcase.jpg</small>
+        </div>
+        <div class="viz3d-badge" aria-label="3D Visualization Technology">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f0f0f" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span class="badge-text" style="font-size:0.45rem;">3D TECH</span>
+        </div>
+      </div>
+
+      <div class="viz3d-content reveal-right">
+        <span class="section-label">Technology</span>
+        <h2 class="section-title">See It Before<br>You <em>Build It</em></h2>
+        <span class="gold-line left"></span>
+        <p style="font-size:0.8rem;color:var(--gray-300);letter-spacing:0.08em;line-height:2.2;margin:1.5rem 0;">
+          Our photo-realistic 3D visualization service lets you walk through your future home before a single wall is touched — eliminating guesswork and costly surprises.
+        </p>
+
+        <div class="viz3d-features">
+          <div class="viz-feature">
+            <div class="viz-feature-icon">◆</div>
+            <div>
+              <div class="viz-feature-title">Photo-Realistic Renders</div>
+              <p class="viz-feature-desc">Indistinguishable from real photography — every material, shadow, and reflection perfected.</p>
+            </div>
+          </div>
+          <div class="viz-feature">
+            <div class="viz-feature-icon">◆</div>
+            <div>
+              <div class="viz-feature-title">Virtual Walkthroughs</div>
+              <p class="viz-feature-desc">Immersive 360° tours of your space before construction begins.</p>
+            </div>
+          </div>
+          <div class="viz-feature">
+            <div class="viz-feature-icon">◆</div>
+            <div>
+              <div class="viz-feature-title">Material Swapping</div>
+              <p class="viz-feature-desc">Test different materials, colors, and finishes in real time to find your perfect look.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="services.html#viz3d" class="btn-primary" style="margin-top:2.5rem;"><span>Explore 3D Services</span><span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ════════════════════════════ -->
+  <section id="testimonials" aria-label="Client Testimonials">
+    <div class="testimonials-inner">
+      <div class="testimonials-header reveal">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title">What Our Clients <em>Say</em></h2>
+        <span class="gold-line"></span>
+      </div>
+
+      <div class="testimonials-track">
+        <!-- Testimonial 1 -->
+        <article class="testimonial-card reveal delay-1">
+          <div class="testimonial-stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Mazay Interiors transformed our Casablanca villa beyond what we imagined. The attention to detail, the quality of materials — it's pure poetry in space.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <div class="author-name">Sophia Benali</div>
+              <div class="author-location">Casablanca, Morocco</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 2 -->
+        <article class="testimonial-card reveal delay-2">
+          <div class="testimonial-stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">The Moroccan salon they designed is absolutely breathtaking. Every zellige tile, every carved piece of plaster tells a story. Our guests never want to leave.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">K</div>
+            <div>
+              <div class="author-name">Karim El Fassi</div>
+              <div class="author-location">Marrakech, Morocco</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 3 -->
+        <article class="testimonial-card reveal delay-3">
+          <div class="testimonial-stars" aria-label="5 stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">The 3D visualization was a game changer. I could see every corner of my future kitchen before construction began. No surprises, only perfection.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <div class="author-name">Layla Mansouri</div>
+              <div class="author-location">Rabat, Morocco</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT SECTION ═════════════════════════ -->
+  <section id="contact" aria-label="Contact Us">
+    <div class="contact-inner">
+      <div class="contact-info reveal-left">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="section-title">Start Your <em>Dream</em><br>Project Today</h2>
+        <span class="gold-line left"></span>
+        <p class="contact-intro">
+          Ready to transform your space? Our team is available for consultations across Morocco. We'd love to hear about your vision.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Studio Address</div>
+              <div class="contact-detail-value">123 Rue Mohammed V, Casablanca, Morocco</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value">+212 6 00 00 00 00</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">hello@mazayinteriors.ma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+        CONTACT FORM
+        Backend ready: data-api-endpoint="/api/contact.php" 
+        Add PHP handler at /api/contact.php to process submissions
+      -->
+      <div class="contact-form reveal-right" 
+           data-api-endpoint="/api/contact.php" 
+           role="region" aria-label="Contact form">
+        <div class="form-header">
+          <h3 class="form-title">Send Us a Message</h3>
+          <p class="form-subtitle">We respond within 24 hours</p>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name *</label>
+              <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Layla" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name *</label>
+              <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Benali" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+212 6 00 00 00 00" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="service">Service Interested In</label>
+            <select class="form-select" id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="interior-design">Interior Design</option>
+              <option value="moroccan-salon">Moroccan Salon</option>
+              <option value="kitchen">Modern Kitchen</option>
+              <option value="3d-viz">3D Visualization</option>
+              <option value="lighting">Luxury Lighting</option>
+              <option value="renovation">Full Renovation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Your Message *</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn" style="width:100%;justify-content:center;">
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ══════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+          <p class="footer-tagline">Transforming spaces into timeless experiences — where Moroccan heritage meets contemporary luxury.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Instagram">In</a>
+            <a href="#" class="social-link" aria-label="Facebook">Fb</a>
+            <a href="#" class="social-link" aria-label="Pinterest">Pi</a>
+            <a href="#" class="social-link" aria-label="YouTube">Yt</a>
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#interior">Interior Design</a></li>
+            <li><a href="services.html#moroccan">Moroccan Salons</a></li>
+            <li><a href="services.html#kitchen">Modern Kitchens</a></li>
+            <li><a href="services.html#viz3d">3D Visualization</a></li>
+            <li><a href="services.html#lighting">Luxury Lighting</a></li>
+            <li><a href="services.html#renovation">Renovations</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@mazayinteriors.ma">hello@mazayinteriors.ma</a></li>
+            <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
+            <li><a href="contact.html">Casablanca Studio</a></li>
+            <li><a href="contact.html">Marrakech Office</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>Mazay Interiors</span>. All rights reserved.</p>
+        <div style="display:flex;gap:2rem;">
+          <a href="#" style="font-size:0.65rem;letter-spacing:0.15em;color:var(--gray-700);">Privacy Policy</a>
+          <a href="#" style="font-size:0.65rem;letter-spacing:0.15em;color:var(--gray-700);">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>

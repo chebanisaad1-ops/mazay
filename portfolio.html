@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mazay Interiors Portfolio — Selected projects showcasing luxury interior design, Moroccan salons, modern kitchens, and 3D visualization across Morocco." />
+  <title>Portfolio — Mazay Interiors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-logo">MAZAY <span>INTERIORS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html" class="nav-cta">Get Consultation</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/Background/Create_an_ultra_realistic_cine.mp4" type="video/mp4" />
+    </video>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label">Our Work</p>
+      <h1 class="page-hero-title">Selected <em>Projects</em></h1>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section id="portfolio" style="padding-top:4rem;">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-label reveal">Our Work</span>
+        <h2 class="section-title reveal delay-1">Featured <em>Projects</em></h2>
+      </div>
+      <div class="portfolio-filters" role="tablist" aria-label="Portfolio categories">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="restaurant" role="tab">Restaurants</button>
+        <button class="filter-btn" data-filter="riad" role="tab">Riads</button>
+        <button class="filter-btn" data-filter="terrace" role="tab">Terraces</button>
+        <button class="filter-btn" data-filter="villa" role="tab">Villas</button>
+        <button class="filter-btn" data-filter="cafe" role="tab">Cafés</button>
+        <button class="filter-btn" data-filter="hotel" role="tab">Hotels</button>
+      </div>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item" data-category="restaurant" data-project-id="1">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37.jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="2">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37%20(1).jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="3">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235720%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="4">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235727%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="5">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235735%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="6">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235742.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="7">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235400.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="8">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235450.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="9">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37%20(2).jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="10">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.37%20(3).jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="restaurant" data-project-id="11">
+        <img src="images/Restaurant/Restaurant%20Medina/WhatsApp%20Image%202026-07-27%20at%2023.29.38.jpeg" alt="Restaurant Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Restaurant</span>
+          <h3 class="portfolio-name">Restaurant Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="12">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235756%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="13">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235803%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="14">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235503.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="15">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235517.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="16">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235527.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="17">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235847%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="18">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235945%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="19">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235534.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="terrace" data-project-id="20">
+        <img src="images/Terasse/Terasse%20Restaurant%20-%20Prince%20Medina/Capture%20d%27%C3%A9cran%202026-07-27%20235542.png" alt="Terrasse Restaurant Prince Medina" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Terrace</span>
+          <h3 class="portfolio-name">Terrasse Restaurant Prince Medina</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="21">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-27%20235955%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="riad" data-project-id="22">
+        <img src="images/Riad/Riad%20Noah%20-%20Medina%20marrakech/Capture%20d%27%C3%A9cran%202026-07-28%20000002%20-%20Copie.png" alt="Riad Noah" class="portfolio-thumb" loading="lazy" />
+        <div class="portfolio-overlay">
+          <span class="portfolio-cat">Riad</span>
+          <h3 class="portfolio-name">Riad Noah</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">MAZAY <span>INTERIORS</span></a>
+          <p class="footer-tagline">Transforming spaces into timeless experiences.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">In</a>
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Pi</a>
+            <a href="#" class="social-link">Yt</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Interior Design</a></li>
+            <li><a href="services.html">Moroccan Salons</a></li>
+            <li><a href="services.html">3D Visualization</a></li>
+            <li><a href="services.html">Renovations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@mazayinteriors.ma">hello@mazayinteriors.ma</a></li>
+            <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>Mazay Interiors</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
