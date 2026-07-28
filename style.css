@@ -1526,7 +1526,31 @@ button { border: none; background: none; font-family: inherit; }
   .services-grid { grid-template-columns: 1fr; }
   .testimonials-track { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
-  .portfolio-filters { flex-wrap: wrap; }
+  .portfolio-filters {
+    flex-wrap: wrap;
+    border: none;
+    overflow: visible;
+    border-radius: 0;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .filter-btn {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    padding: 0.85rem 1.6rem;
+    border: 1px solid rgba(200, 169, 107, 0.3);
+    border-radius: 12px;
+    min-height: 48px;
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  .filter-btn:last-child { border-right: 1px solid rgba(200, 169, 107, 0.3); }
+
+  .filter-btn.active,
+  .filter-btn:hover { border-color: var(--gold); }
   .form-row { grid-template-columns: 1fr; }
   
   .portfolio-grid { grid-template-columns: 1fr; }
