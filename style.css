@@ -62,6 +62,7 @@ button { border: none; background: none; font-family: inherit; }
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  text-align: center;
 }
 
 .loader-logo {
@@ -72,6 +73,7 @@ button { border: none; background: none; font-family: inherit; }
   color: var(--white);
   opacity: 0;
   animation: fadeInUp 1s ease forwards 0.3s;
+  width: 100%;
 }
 
 .loader-logo span { color: var(--gold); }
@@ -82,6 +84,7 @@ button { border: none; background: none; font-family: inherit; }
   background: var(--gray-700);
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .loader-bar::after {
@@ -1531,6 +1534,42 @@ button { border: none; background: none; font-family: inherit; }
 
   .contact-form { padding: 2rem 1.5rem; }
   .before-after-slider { height: 300px; }
+
+  /* Services page: vertical stack - text above image on mobile */
+  #restaurant, #riad, #terrace, #cafe, #hotel, #villa,
+  #space-planning, #renovation, #furniture, #lighting,
+  #viz3d, #turnkey {
+    display: flex !important;
+    gap: 2.5rem !important;
+    padding: 2.5rem 0 !important;
+  }
+
+  /* Image-first sections: reverse stack so text appears above */
+  #restaurant, #terrace, #hotel, #space-planning, #furniture, #viz3d {
+    flex-direction: column-reverse !important;
+  }
+
+  /* Text-first sections: normal stack */
+  #riad, #cafe, #villa, #renovation, #lighting, #turnkey {
+    flex-direction: column !important;
+  }
+
+  /* Full-width images on mobile */
+  #restaurant .img-placeholder, #riad .img-placeholder,
+  #terrace .img-placeholder, #cafe .img-placeholder,
+  #hotel .img-placeholder, #villa .img-placeholder,
+  #space-planning .img-placeholder, #renovation .img-placeholder,
+  #furniture .img-placeholder, #lighting .img-placeholder,
+  #viz3d .img-placeholder, #turnkey .img-placeholder {
+    width: 100% !important;
+  }
+
+  /* About page story grid: vertical stack */
+  .about-story-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+  }
 }
 
 /* --- Mobile Menu --- */
@@ -1836,5 +1875,9 @@ body::after {
   }
   .about-story-section {
     padding: 3rem 1rem !important;
+  }
+  .loader-logo {
+    letter-spacing: 0.15em;
+    padding: 0 1rem;
   }
 }
